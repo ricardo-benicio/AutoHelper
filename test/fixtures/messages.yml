@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  conversation: one
+  context: MyText
+  sender_type: MyString
+  ai_response: false
+
+two:
+  conversation: two
+  context: MyText
+  sender_type: MyString
+  ai_response: false
