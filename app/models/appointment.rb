@@ -5,7 +5,7 @@ class Appointment < ApplicationRecord
   enum status: { pending: 'pending', confirmed: 'confirmed', cancelled: 'cancelled' }
   
   validates :datetime, presence: true
-  validates :datetime_in_future
+  validate :datetime_in_future
 
   private
 
