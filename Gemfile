@@ -41,9 +41,18 @@ gem "activerecord-postgis-adapter"
 gem "sidekiq"
 gem "dotenv-rails"
 
-group :development, :test do
+group :development do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+end
+
+group :development, :test do
+  # Testing framework
+  gem "rspec-rails"
+  gem "factory_bot_rails"
+  gem "faker"
+  gem "shoulda-matchers"
+  gem "database_cleaner-active_record"
 end
 
 group :development do
