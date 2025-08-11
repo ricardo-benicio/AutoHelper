@@ -14,7 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '4271ef9ae105f3079e69daa6eea84117a2a248cee123b4dc67651446f30d78378b9add0e0a5d33d3047247bffb2919b512e25af82623ab0ea16cce9ffa470f78'
+  # config.secret_key = 'dc30fea17d2bf7da42466b59c4f476098c4ee60e9993fdc9b0f77dee22364cca837c1aad7b5bbf43483842c75c70588a081c939d6cda6841d1719b44bf85fa9e'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -24,7 +24,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'noreply@autoassistant.com'
+  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -97,7 +97,7 @@ Devise.setup do |config|
   # Notice that if you are skipping storage for all authentication paths, you
   # may want to disable generating routes to Devise's sessions controller by
   # passing skip: :sessions to `devise_for` in your config/routes.rb
-  config.skip_session_storage = [:http_auth, :params_auth]
+  config.skip_session_storage = [:http_auth]
 
   # By default, Devise cleans up the CSRF token on authentication to
   # avoid CSRF token fixation attacks. This means that, when using AJAX
@@ -126,7 +126,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '53f8aa9fbb84c554b35263d8a13e18b24d7cdf59bac68a7b27f75c12e232a0c04172367442baa2d178f234d1e553f2a19651164a41be7af87ceeb5837aa21ff9'
+  # config.pepper = 'cef61782aeb4a8549532569aed0f51ac090b0d6811a74eaf30da9dd2da610cf17bcbd780ce643eeb108fe24feb26a474da4d913aa1bb7538ca0e24ca6172b040'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -263,7 +263,7 @@ Devise.setup do |config|
   # should add them to the navigational formats lists.
   #
   # The "*/*" below is required to match Internet Explorer requests.
-  config.navigational_formats = []
+  # config.navigational_formats = ['*/*', :html, :turbo_stream]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
